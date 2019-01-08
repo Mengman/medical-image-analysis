@@ -1,0 +1,14 @@
+DATA:
+  TEST:
+    SOURCE_PATH: '/media/tx-deepocean/Data/dataset/frature/012763513/1.2.124.113532.58911.5035.4019.20181217.90251.1679644853'
+    LABEL_PATH: '/media/tx-deepocean/Data/dataset/fracture_test_set/anno_folder'
+    DATA_SHAPE: 512
+    HAS_CROP: true
+
+TEST:
+  GPUS: [0,1]
+  MODEL_PATH: '/media/tx-deepocean/Data/dataset/frature/model/v2.1_1009_alldoc_resnet50-fpn_512'
+  EPOCH: 50
+  MODEL_NAME: 'resnet50-fpn'
+  JSON_OUTPUT_DIR: '/media/tx-deepocean/Data/workspace/bone/test/json_result'
+  CSV_REPORT_PATH: '/media/tx-deepocean/Data/workspace/bone/test/csv_result/ssd_mulicls_test.xlsx'
